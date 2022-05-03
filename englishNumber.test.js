@@ -154,4 +154,11 @@ describe("toEnglishNumber", () => {
 		let expected = "twenty-seven";
 		expect(englishNumber).toEqual(expected, "englishNumber");
 	});
+
+	it("converts 42 to forty-two", () => {
+		let number = 42;
+		let englishNumber = toEnglishNumber(number);
+		let expected = "forty-two";
+		expect(englishNumber).toEqual(expected, "englishNumber");
+	});
 });
