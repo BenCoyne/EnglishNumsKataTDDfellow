@@ -1,0 +1,12 @@
+{
+  "name": "englishnumberstdd",
+  "version": "1.0.0",
+  "description": "",
+  "main": "englishNumber.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
