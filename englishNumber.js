@@ -15,6 +15,10 @@ const toEnglishNumber = (number) => {
 		return "four";
 	}
 
+	if (number === 5) {
+		return "five";
+	}
+
 	return "zero";
 };
 

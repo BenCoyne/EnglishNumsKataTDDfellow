@@ -35,4 +35,11 @@ describe("toEnglishNumber", () => {
 		let expected = "four";
 		expect(englishNumber).toEqual(expected, "englishNumber");
 	});
+
+	it("convers 5 to five", () => {
+		let number = 5;
+		let englishNumber = toEnglishNumber(number);
+		let expected = "five";
+		expect(englishNumber).toEqual(expected, "englishNumber");
+	});
 });
