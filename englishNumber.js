@@ -24,16 +24,18 @@ const simpleNumbers = [
 
 const toEnglishNumber = (number) => {
 	if (number >= 20) {
-		if (Math.floor(number / 10) === 2) {
-			return "twenty-" + toEnglishNumber(number % 10);
+		let firstDigit = Math.floor(number / 10);
+		let lastDigit = number % 10;
+		let firstPart;
+		if (firstDigit === 2) {
+			firstPart = "twenty";
+		} else if (firstDigit === 3) {
+			firstPart = "thirty";
+		} else if (firstDigit === 4) {
+			firstPart = "forty";
 		}
-
-		if (Math.floor(number / 10) === 3) {
-			return "thirty-" + toEnglishNumber(number % 10);
-		}
-		if (Math.floor(number / 10) === 4) {
-			return "forty-" + toEnglishNumber(number % 10);
-		}
+		let secondPart = toEnglishNumber(lastDigit);
+		return firstPart + "-" + secondPart;
 	}
 	return simpleNumbers[number];
 };
