@@ -84,4 +84,11 @@ describe("toEnglishNumber", () => {
 		let expected = "eleven";
 		expect(englishNumber).toEqual(expected, "englishNumber");
 	});
+
+	it("converts 12 to twelve", () => {
+		let number = 12;
+		let englishNumber = toEnglishNumber(number);
+		let expected = "twelve";
+		expect(englishNumber).toEqual(expected, "englishNumber");
+	});
 });
