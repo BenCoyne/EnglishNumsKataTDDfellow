@@ -182,4 +182,11 @@ describe("toEnglishNumber", () => {
 		let expected = "sixty-six";
 		expect(englishNumber).toEqual(expected, "englishNumber");
 	});
+
+	it("converts 77 to seventy-seven", () => {
+		let number = 77;
+		let englishNumber = toEnglishNumber(number);
+		let expected = "seventy-seven";
+		expect(englishNumber).toEqual(expected, "englishNumber");
+	});
 });

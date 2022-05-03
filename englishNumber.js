@@ -22,7 +22,7 @@ const simpleNumbers = [
 	"nineteen",
 ];
 
-const tens = ["", "", "twenty", "thirty", "forty", "fifty", "sixty"];
+const tens = ["", "", "twenty", "thirty", "forty", "fifty", "sixty", "seventy"];
 
 const convertTens = (digit) => {
 	return tens[digit];
