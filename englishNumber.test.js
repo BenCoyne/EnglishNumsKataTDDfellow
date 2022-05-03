@@ -189,4 +189,18 @@ describe("toEnglishNumber", () => {
 		let expected = "seventy-seven";
 		expect(englishNumber).toEqual(expected, "englishNumber");
 	});
+
+	it("converts 88 to eighty-eight", () => {
+		let number = 88;
+		let englishNumber = toEnglishNumber(number);
+		let expected = "eighty-eight";
+		expect(englishNumber).toEqual(expected, "englishNumber");
+	});
+
+	it("converts 99 to ninety-nine", () => {
+		let number = 99;
+		let englishNumber = toEnglishNumber(number);
+		let expected = "ninety-nine";
+		expect(englishNumber).toEqual(expected, "englishNumber");
+	});
 });
