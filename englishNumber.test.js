@@ -70,4 +70,11 @@ describe("toEnglishNumber", () => {
 		let expected = "nine";
 		expect(englishNumber).toEqual(expected, "englishNumber");
 	});
+
+	it("converts 10 to ten", () => {
+		let number = 10;
+		let englishNumber = toEnglishNumber(number);
+		let expected = "ten";
+		expect(englishNumber).toEqual(expected, "englishNumber");
+	});
 });

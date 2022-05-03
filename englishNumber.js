@@ -9,6 +9,7 @@ const singleDigits = [
 	"seven",
 	"eight",
 	"nine",
+	"ten",
 ];
 
 const toEnglishNumber = (number) => {
