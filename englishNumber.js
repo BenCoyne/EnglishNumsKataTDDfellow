@@ -1,5 +1,5 @@
 const toEnglishNumber = () => {
-	return null;
+	return "zero";
 };
 
 module.exports = toEnglishNumber;
