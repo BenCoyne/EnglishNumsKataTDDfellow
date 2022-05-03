@@ -1,4 +1,4 @@
-const singleDigits = [
+const simpleNumbers = [
 	"zero",
 	"one",
 	"two",
@@ -13,7 +13,7 @@ const singleDigits = [
 ];
 
 const toEnglishNumber = (number) => {
-	return singleDigits[number];
+	return simpleNumbers[number];
 };
 
 module.exports = toEnglishNumber;
