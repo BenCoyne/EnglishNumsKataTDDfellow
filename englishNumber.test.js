@@ -175,4 +175,11 @@ describe("toEnglishNumber", () => {
 		let expected = "fifty-five";
 		expect(englishNumber).toEqual(expected, "englishNumber");
 	});
+
+	it("converts 66 to sixty-six", () => {
+		let number = 66;
+		let englishNumber = toEnglishNumber(number);
+		let expected = "sixty-six";
+		expect(englishNumber).toEqual(expected, "englishNumber");
+	});
 });
