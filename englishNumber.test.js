@@ -42,4 +42,32 @@ describe("toEnglishNumber", () => {
 		let expected = "five";
 		expect(englishNumber).toEqual(expected, "englishNumber");
 	});
+
+	it("convers 6 to six", () => {
+		let number = 6;
+		let englishNumber = toEnglishNumber(number);
+		let expected = "six";
+		expect(englishNumber).toEqual(expected, "englishNumber");
+	});
+
+	it("convers 7 to seven", () => {
+		let number = 7;
+		let englishNumber = toEnglishNumber(number);
+		let expected = "seven";
+		expect(englishNumber).toEqual(expected, "englishNumber");
+	});
+
+	it("convers 8 to eight", () => {
+		let number = 8;
+		let englishNumber = toEnglishNumber(number);
+		let expected = "eight";
+		expect(englishNumber).toEqual(expected, "englishNumber");
+	});
+
+	it("convers 9 to nine", () => {
+		let number = 9;
+		let englishNumber = toEnglishNumber(number);
+		let expected = "nine";
+		expect(englishNumber).toEqual(expected, "englishNumber");
+	});
 });
