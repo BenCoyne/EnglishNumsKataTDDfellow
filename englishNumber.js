@@ -28,7 +28,12 @@ const toEnglishNumber = (number) => {
 			return "twenty-" + toEnglishNumber(number % 10);
 		}
 
-		return "forty-" + toEnglishNumber(number % 10);
+		if (Math.floor(number / 10) === 3) {
+			return "thirty-" + toEnglishNumber(number % 10);
+		}
+		if (Math.floor(number / 10) === 4) {
+			return "forty-" + toEnglishNumber(number % 10);
+		}
 	}
 	return simpleNumbers[number];
 };
