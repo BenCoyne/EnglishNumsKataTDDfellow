@@ -22,10 +22,17 @@ describe("toEnglishNumber", () => {
 		expect(englishNumber).toEqual(expected, "englishNumber");
 	});
 
-	it("convers 3 to two", () => {
+	it("convers 3 to three", () => {
 		let number = 3;
 		let englishNumber = toEnglishNumber(number);
 		let expected = "three";
+		expect(englishNumber).toEqual(expected, "englishNumber");
+	});
+
+	it("convers 4 to four", () => {
+		let number = 4;
+		let englishNumber = toEnglishNumber(number);
+		let expected = "four";
 		expect(englishNumber).toEqual(expected, "englishNumber");
 	});
 });

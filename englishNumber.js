@@ -11,6 +11,10 @@ const toEnglishNumber = (number) => {
 		return "three";
 	}
 
+	if (number === 4) {
+		return "four";
+	}
+
 	return "zero";
 };
 
