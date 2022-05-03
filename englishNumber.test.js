@@ -21,4 +21,11 @@ describe("toEnglishNumber", () => {
 		let expected = "two";
 		expect(englishNumber).toEqual(expected, "englishNumber");
 	});
+
+	it("convers 3 to two", () => {
+		let number = 3;
+		let englishNumber = toEnglishNumber(number);
+		let expected = "three";
+		expect(englishNumber).toEqual(expected, "englishNumber");
+	});
 });

@@ -6,6 +6,11 @@ const toEnglishNumber = (number) => {
 	if (number === 2) {
 		return "two";
 	}
+
+	if (number === 3) {
+		return "three";
+	}
+
 	return "zero";
 };
 
