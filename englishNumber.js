@@ -13,6 +13,12 @@ const simpleNumbers = [
 	"eleven",
 	"twelve",
 	"thirteen",
+	"fourteen",
+	"fifteen",
+	"sixteen",
+	"seventeen",
+	"eighteen",
+	"nineteen",
 ];
 
 const toEnglishNumber = (number) => {

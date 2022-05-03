@@ -98,4 +98,46 @@ describe("toEnglishNumber", () => {
 		let expected = "thirteen";
 		expect(englishNumber).toEqual(expected, "englishNumber");
 	});
+
+	it("converts 14 to fourteen", () => {
+		let number = 14;
+		let englishNumber = toEnglishNumber(number);
+		let expected = "fourteen";
+		expect(englishNumber).toEqual(expected, "englishNumber");
+	});
+
+	it("converts 15 to fifteen", () => {
+		let number = 15;
+		let englishNumber = toEnglishNumber(number);
+		let expected = "fifteen";
+		expect(englishNumber).toEqual(expected, "englishNumber");
+	});
+
+	it("converts 16 to sixteen", () => {
+		let number = 16;
+		let englishNumber = toEnglishNumber(number);
+		let expected = "sixteen";
+		expect(englishNumber).toEqual(expected, "englishNumber");
+	});
+
+	it("converts 17 to seventeen", () => {
+		let number = 17;
+		let englishNumber = toEnglishNumber(number);
+		let expected = "seventeen";
+		expect(englishNumber).toEqual(expected, "englishNumber");
+	});
+
+	it("converts 18 to eighteen", () => {
+		let number = 18;
+		let englishNumber = toEnglishNumber(number);
+		let expected = "eighteen";
+		expect(englishNumber).toEqual(expected, "englishNumber");
+	});
+
+	it("converts 19 to nineteen", () => {
+		let number = 19;
+		let englishNumber = toEnglishNumber(number);
+		let expected = "nineteen";
+		expect(englishNumber).toEqual(expected, "englishNumber");
+	});
 });
