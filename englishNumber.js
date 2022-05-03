@@ -24,7 +24,7 @@ const simpleNumbers = [
 
 const toEnglishNumber = (number) => {
 	if (number >= 20) {
-		return "twenty-" + toEnglishNumber(3);
+		return "twenty-" + toEnglishNumber(number % 10);
 	}
 	return simpleNumbers[number];
 };
